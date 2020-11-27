@@ -1,23 +1,39 @@
-import React from 'react';
-import { ItemPage, MainPage } from './components/pages';
-import { View, SafeAreaView, ScrollView } from 'react-native';
+import React, { Component } from 'react';
+import { View, SafeAreaView } from 'react-native';
 import { NativeRouter , Route, Switch } from 'react-router-native';
+import { Provider } from 'react-redux';
 
-const App = () => {
-  return (
-    <NativeRouter>
-      <SafeAreaView style={{backgroundColor: "#ffb9c4"}}>
-        <ScrollView style={{contentSize: {height: 812, width: 375}}}>
-          <View style={{backgroundColor: '#ffffff'}}>
-            <Switch>
-              <Route exact path="/" component={MainPage} />
-              <Route path="/item" component={ItemPage} />
-            </Switch>
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </NativeRouter>
-  )
+import store from './src/redux/store';
+import { ItemPage, MainPage, CartPage } from './src/components/pages';
+
+import { getItems } from './src/utils';
+
+export default class App extends Component {
+  componentDidMount() {
+    getItems();
+  }
+
+  render() {
+    return (
+      <Provider store={store}>
+        <NativeRouter>
+          <SafeAreaView style={{backgroundColor: "#ffb9c4"}}>
+            <View style={{backgroundColor: '#ffffff'}}>
+              <Switch>
+                <Route exact path="/" >
+                  <MainPage />
+                </Route>
+                <Route path="/items/:id" render={({match}) => {
+                  const {id} = match.params;
+
+                  return <ItemPage idItem={id - 1} />
+                }}/>
+                <Route path="/cart" component={CartPage} />
+              </Switch>
+            </View>
+          </SafeAreaView>
+        </NativeRouter>
+      </Provider>
+    )
+  }
 }
-
-export default App;

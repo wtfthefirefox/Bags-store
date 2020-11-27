@@ -1,0 +1,113 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Pink Bag",
+            "type": "bags",
+            "brand": "Moon",
+            "intPercentLeather": 100,
+            "code": "Y2d435",
+            "colors": [
+                "#E37790",
+                "#000000",
+                "#D6B379"
+            ],
+            "colorsImgs": [
+                "LeatherPink"
+            ],
+            "sizes": [
+                "S", 
+                "M", 
+                "L"
+            ],
+            "about": "Occaecat qui sit quis labore reprehenderit nulla. Amet pariatur voluptate laboris ipsum veniam exercitation est do duis quis laborum reprehenderit aute.",
+            "price": 100,
+            "isSale": true,
+            "isPopular": true,
+            "isRecomended": false,
+            "rate": 5
+        },
+        {
+            "id": 2,
+            "name": "Leather Bag",
+            "type": "bags",
+            "brand": "Veolin",
+            "intPercentLeather": 100,
+            "code": "F2d415",
+            "colors": [
+                "#C7051A",
+                "#000000",
+                "#D6B379"
+            ],
+            "colorsImgs": [
+                "LeatherBigRedBag"
+            ],
+            "sizes": [
+                "S", 
+                "M", 
+                "L"
+            ],
+            "about": "Occaecat qui sit quis labore reprehenderit nulla. Amet pariatur voluptate laboris ipsum veniam exercitation est do duis quis laborum reprehenderit aute.",
+            "price": 100,
+            "isSale": false,
+            "isPopular": true,
+            "isRecomended": false,
+            "rate": 4.7
+        },
+        {
+            "id": 3,
+            "name": "Hobo Bag",
+            "type": "bags",
+            "brand": "Scarab",
+            "intPercentLeather": 50,
+            "code": "T2u437",
+            "colors": [
+                "#89cff0",
+                "#f5d3ce",
+                "#ff0000"
+            ],
+            "colorsImgs": [
+                "HoboBlue",
+                "HoboPink",
+                "HoboRed"
+            ],
+            "sizes": [
+                "S", 
+                "M", 
+                "L"
+            ],
+            "about": "Occaecat qui sit quis labore reprehenderit nulla. Amet pariatur voluptate laboris ipsum veniam exercitation est do duis quis laborum reprehenderit aute.",
+            "price": 50,
+            "isSale": true,
+            "isPopular": false,
+            "isRecomended": true,
+            "rate": 4.5
+        },
+        {
+            "id": 4,
+            "name": "Queen Mini Bag",
+            "type": "bags",
+            "brand": "Queens",
+            "intPercentLeather": 100,
+            "code": "I2g276",
+            "colors": [
+                "#E37790",
+                "#000000",
+                "#D6B379"
+            ],
+            "colorsImgs": [
+                "QueenPink"
+            ],
+            "sizes": [
+                "S", 
+                "M"
+            ],
+            "about": "Occaecat qui sit quis labore reprehenderit nulla. Amet pariatur voluptate laboris ipsum veniam exercitation est do duis quis laborum reprehenderit aute.",
+            "price": 50,
+            "isSale": false,
+            "isPopular": false,
+            "isRecomended": true,
+            "rate": 4.6
+        }
+    ]
+}
